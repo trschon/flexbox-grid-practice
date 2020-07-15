@@ -108,31 +108,63 @@ body {
   height: 100%;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 300;
-  display:flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  
+.flex-container {
+    /*add display:flex and set justify-content to space-between*/
+    font-weight: 300;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    
+    
+  }
+
+ header, main, footer{
+    color: #fff;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.div-1, .div-2, .div-3 {
+header{
+    font-size: 2.1em;
+    height: 100px;
+}
+
+main{
+    font-size: 2em;
+    height: 150px;
+    border-bottom: white solid 1px; 
+    margin-bottom: 1em;
+}
+
+footer{
+    border-top: white solid 1px;
+    margin-top: 1em;
+    padding: .5em;
+    height: 100px;
+    
+}
+
+
+
+.flex-items {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #fff;
   line-height: 1.5em;
   font-size: 1.25em;
-  height: 300px;
   width: 30%;
   display:flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 
-.div-1, .div-2{
-    border-right: white solid 1px;
+#div-1, #div-2{
+    border-right: rgba(255, 255, 255, 0.548) solid 1px;
 }
 
 
